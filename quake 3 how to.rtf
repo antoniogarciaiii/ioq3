@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Arial-BoldMT;}
+{\colortbl;\red255\green255\blue255;\red20\green20\blue21;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c10196\c10196\c10588;\cssrgb\c100000\c100000\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{lower-alpha\}.}{\leveltext\leveltemplateid102\'02\'01.;}{\levelnumbers\'01;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+at this moment, there is no binary (program to play quake 3) that works with catalina., the most current mac version as the time of writing this comment.\
+-----\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 things you need
+\f0\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+pak0.pk3. if you got quake 3 from the bethesda launcher (only available on windows), go to something like C:/program files (x86)/bethesda/games/quake3/baseq3\cb1 \uc0\u8232 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+xcode (make sure it's updated, and you have tried to open it at least once to agree to the ToS and the little post-agreement installation thing it does)\cb1 \uc0\u8232 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+these pak files\'a0{\field{\*\fldinst{HYPERLINK "https://ioquake3.org/extras/patch-data/"}}{\fldrslt \ul https://ioquake3.org/extras/patch-data/}}\'a0-- you'll have to agree to the terms.\cf2 I haven't read them tbh.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+ Make sure you also copy the mission pack files to the mission pack folders. \cb1 \uc0\u8232 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \cb3 things you'll do
+\f0\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+Install Xcode from macOS App Store.\cb1 \uc0\u8232 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+Open Xcode, because you need to accept the licence agreement and let it install additional components. You can close it once done.\cb1 \uc0\u8232 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+Download the ioquake 3 source code from the GitHub repo:\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/ioquake/ioq3"}}{\fldrslt \ul https://github.com/ioquake/ioq3}}\'a042\cb1 \uc0\u8232 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+In Terminal, navigate to the source code folder and run ./make-macosx.sh x86_64\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls2\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 {\listtext	a.	}\expnd0\expndtw0\kerning0
+The compilation takes a minute or so, and then you\'92ll have the ioquake3 app inside of the build directory. Once again, make sure you copy the contents from the mission pack folders in the patch-data download to the mission pack folder in your newly built app. Make sure to add the *.pk3 files under baseq3 folder, and you should be good to go!\cb1 \uc0\u8232 \
+\ls2\ilvl1\cb3 \kerning1\expnd0\expndtw0 {\listtext	b.	}\expnd0\expndtw0\kerning0
+i recommend moving the contents of the build folder into your applications folder, so that you can run it like your other apps. (i like to keep things tidy)\cb1 \uc0\u8232 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \cb3 sources
+\f0\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}{\field{\*\fldinst{HYPERLINK "https://discourse.ioquake.org/t/ioquake3-failed-to-launch-mac-os-sera-10-12-6/977/5"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul https://discourse.ioquake.org/t/ioquake3-failed-to-launch-mac-os-sera-10-12-6/977/5}}\cb1 \expnd0\expndtw0\kerning0
+\uc0\u8232 \
+}
